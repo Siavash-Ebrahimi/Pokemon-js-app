@@ -10,3 +10,7 @@ select,
 button {
   font-family: system-ui;
 }
+.java {
+  margin: a auto;
+  color: green;
+}
