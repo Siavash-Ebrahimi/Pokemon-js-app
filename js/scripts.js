@@ -15,25 +15,9 @@ for (let i = 0; i < pokemonList.length; i++) {
      related to find uper 5.05 during thr for loop then
      once find it it will return it in a document.write*/
   if (pokemonList[i].height >= 5.05) {
-    document.write(`|  Pokémon name: ${pokemonList[i].name}, (height: ${pokemonList[i].height}) - Wow, that’s big! `);
+    document.write(`<p>Pokémon name: ${pokemonList[i].name}, (height: ${pokemonList[i].height}) - Wow, that’s big!</p>`);
   } else {
-    document.write(`|  Pokémon name: ${pokemonList[i].name}, (height: ${pokemonList[i].height})  `);
+    document.write(`<p>Pokémon name: ${pokemonList[i].name}, (height: ${pokemonList[i].height})</p>`);
   }
 }
-// Practis Section:
-/* for (let i = 0; i < pokemonList.length; i++) {
-  document.write(`| Pokémon Name: ${pokemonList[i].name} -> Weaknesses: `);
-  for (let b = 0; b < pokemonList[i].weaknesses.length; b++){
-    document.write(`- ${pokemonList[i].weaknesses[b]} `);
-  }
-}
-
-let fruits = ["apple", "banana", "orange", "grape"]
-let text2 = "";
-let i = 0;
-while (fruits[i]){
-  text2 = text2 + " " + fruits[i];
-  i++;
-}
-console.log(text2);
-*/
+document.write('<h1 class="java">Siavash Ebrahimi</h1>')
