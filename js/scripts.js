@@ -1,13 +1,32 @@
 // Pokémon project
 // Creating Pokémon Array
-let pokemonList = [
-  {name: 'Bulbasaur', height: 2.04, types: ['grass', 'poison'], weaknesses: ['Fire', 'Psychic', 'Flying', 'Ice']},
-  {name: 'Blastoise', height: 5.03, types: ['water'], weaknesses: ['Grass', 'Electric']},
-  {name: 'Charizard', height: 5.07, types: ['fire', 'flying'], weaknesses: ['Water', 'Electric', 'Rock']},
-  {name: 'Wigglytuff', height: 3.03, types: ['normal', 'fairy'], weaknesses: ['Steel', 'Poison']},
-];
+let pokemonRepository = (function(){
+  let pokemonList = [
+    {name: 'Bulbasaur', height: 2.04, types: ['grass', 'poison'], weaknesses: ['Fire', 'Psychic', 'Flying', 'Ice']},
+    {name: 'Blastoise', height: 5.03, types: ['water'], weaknesses: ['Grass', 'Electric']},
+    {name: 'Charizard', height: 5.07, types: ['fire', 'flying'], weaknesses: ['Water', 'Electric', 'Rock']},
+    {name: 'Wigglytuff', height: 3.03, types: ['normal', 'fairy'], weaknesses: ['Steel', 'Poison']},
+  ];
+
+  function add(item){
+    pokemonList.push(item);
+  }
+
+  function allGet(){
+    return pokemonList;
+  }
+
+  return {
+    add: add,
+    allGet: allGet
+  }
+
+})()
+
+pokemonRepository.add({name: 'Diandong', height: 5.05});
+console.log(pokemonRepository.allGet());
 
 // Print all Pokémon Detailes by Internal using forEach loop:
-pokemonList.forEach(function(i) {
+pokemonRepository.allGet().forEach(function(i) {
    document.write(`<p>Pokémon name: ${i.name}, he is ${i.height} tall, with type of: ${i.types}, and the Weakness of: ${i.weaknesses}`);
 });
