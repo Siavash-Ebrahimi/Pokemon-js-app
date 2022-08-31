@@ -16,17 +16,39 @@ let pokemonRepository = (function(){
     return pokemonList;
   }
 
+  function showDetails (pokemon, button){
+    button.addEventListener('click', function(event){
+      console.log("Pokémon Name:" + pokemon.name + ", " + "Pokémon Height:" + pokemon.height);
+    });
+  }
+
+  let pokdex = document.querySelector('.pokomen-list');
+
+  function addListItem(pokemon){
+    let itemList = document.createElement('li');
+    let button = document.createElement('button');
+    button.innerText = (pokemon.name);
+    button.classList.add('pokItem');
+    itemList.appendChild(button);
+    pokdex.appendChild(itemList);
+    showDetails(pokemon, button);
+  }
+
   return {
     add: add,
-    allGet: allGet
+    allGet: allGet,
+    addListItem: addListItem
   }
 
 })()
 
-pokemonRepository.add({name: 'Diandong', height: 5.05});
-console.log(pokemonRepository.allGet());
+pokemonRepository.add({name: 'Diandong', height: 5.05, types:'', weaknesses:''});
 
-// Print all Pokémon Detailes by Internal using forEach loop:
-pokemonRepository.allGet().forEach(function(i) {
-   document.write(`<p>Pokémon name: ${i.name}, he is ${i.height} tall, with type of: ${i.types}, and the Weakness of: ${i.weaknesses}`);
-});
+pokemonRepository.allGet().forEach(function(i){
+  pokemonRepository.addListItem(i);
+})
+
+// // Print all Pokémon Detailes by Internal using forEach loop:
+// pokemonRepository.allGet().forEach(function(i) {
+//    document.write(`<p>Pokémon name: ${i.name}, he is ${i.height} tall, with type of: ${i.types}, and the Weakness of: ${i.weaknesses}`);
+// });
