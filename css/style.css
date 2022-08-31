@@ -4,13 +4,40 @@
   box-sizing: border-box;
 }
 
-input,
-textarea,
-select,
-button {
-  font-family: system-ui;
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-.java {
-  font-size: 9px;
+h1 {
+  color: darkgreen;
+}
+
+.selected {
+  border: 5px red solid;
+}
+
+.pokomen-list {
+  max-width: 300px;
+}
+
+.pokItem {
+  background-color: hsl(158, 36%, 37%);
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  margin-top: 7px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  border-bottom: 2px solid hsl(158, 38%, 20%);
+  outline: none;
+  transition: 0.4s opacity;
+}
+
+.pokItem:hover {
+  background-color: hsl(158, 38%, 20%);
+  opacity: 90%;
 }
