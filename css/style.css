@@ -8,7 +8,7 @@ body {
 .btn-lg {
   width: 300px;
   margin-top: 7px;
-  transition: 0.8s opacity;  
+  transition: 0.8s opacity;
 }
 
 .btn-lg:hover {
@@ -24,4 +24,12 @@ h1 {
 
 .group-list-item {
   list-style: none;
+}
+
+.col-md-auto {
+  background-color: white;
+}
+
+.list-group {
+  margin-top: 200px;
 }
