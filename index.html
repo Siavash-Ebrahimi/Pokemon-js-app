@@ -15,15 +15,11 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <nav class="navbar fixed-top navbar-light bg-light">
-    <a class="navbar-brand">Pokémon List</a>
-  </nav>
-
   <div class="container text-center">
     <dive class="row justify-content-md-center">
-      <div class="col-md-auto">
+      <div class="col-md-auto fixed-top">
         <h1>Pokémon List</h1>
-        <p>Click one of the Pokémon below to get its details.</p>
+        <p>Just scroll down and click one of the Pokémon below to get its details.</p>
       </div>
     </div>
     <div class="row justify-content-md-center">
@@ -33,6 +29,10 @@
       </div>
     </div>
   </div>
+
+  <nav class="navbar fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Pokémon List</a>
+  </nav>
 
   <!-- Show Pokemon Modal -->
   <div class="modal fade" id="showPokemonModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
