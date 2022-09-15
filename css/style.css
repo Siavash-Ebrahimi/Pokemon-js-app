@@ -6,7 +6,7 @@ body {
 }
 
 .btn-lg {
-  width: 300px;
+  width: 280px;
   margin-top: 7px;
   transition: 0.8s opacity;
 }
@@ -26,7 +26,7 @@ h1 {
   list-style: none;
 }
 
-.col-md-auto {
+.col-auto {
   background-color: white;
 }
 
