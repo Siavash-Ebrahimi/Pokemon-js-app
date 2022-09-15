@@ -107,8 +107,8 @@ let modalRepository = (function(){
     modalBody.empty();
 
     modalTitel.append(pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1));
-    let pokemonDetailes = $('<p></p>');
-    pokemonDetailes.addClass('modal-title');
+    let pokemonDetailes = $('<p class="modal-title"></p>');
+
     pokemonDetailes.append(`Yeees, this is ${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}, and its height is: ${pokemon.height}/meter with weight
     of: ${pokemon.weight}/Kg. Lets play with that !!`);
     modalBody.append(pokemonDetailes);
