@@ -6,14 +6,14 @@
 
 ![screenshot](img/asta.png)
 
-The app will fetch data from an API .
+The app fetches data from the API (https://pokeapi.co/api/v2/pokemon/?limit=150) then parses data and creates a list of Pokémon based on each Pokémon's names. Next, once a user clicks on any of the names listed on the app a modal will appear (same as above picture) and the user sees the Name, height and weight of chosen character.
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- Major languages: HTML - CSS - Java Script.
+- Frameworks: Bootstrap.
+- Technologies used: Ajax - jQuery.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Pokémon Live Demo Link](https://siavash-ebrahimi.github.io/simple-js-app/)
