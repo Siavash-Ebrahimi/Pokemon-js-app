@@ -1,4 +1,4 @@
-# simple-js-app
+# Pokémon-js-app
 
 > In this project users are able to scroll and click on a Pokémon name through a list to get some info and see the pictures of chosen Pokémon.
 
